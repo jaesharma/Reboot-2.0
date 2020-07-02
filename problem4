@@ -1,3 +1,5 @@
+Problem #4.  share files and folder 
+
 sol: 
 => creating two user jack and jill:
 useradd jack

@@ -1,3 +1,5 @@
+Problem #2 :  play with directory 
+
 => create a dir without name from command line
 mkdir $'\n'
 

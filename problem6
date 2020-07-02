@@ -1,9 +1,10 @@
-sol: 
-an ugly(but working solution):
-i created a funtion in .bashrc and file and trap it.
+problem #6:  run command without any output 
+
+sol:  an ugly(but working solution):
+i created a function in .bashrc file and trap it.
 
 func(){
-/bin/bash
+  /bin/bash
 }
 trap 'func' DEBUG
 

@@ -1,1 +1,3 @@
+Problem #3 :  create a directory structure 
+
 sol: mkdir -p A{B/{G/K,H/J},C/{I/J,J/L},D/{E/M,F/L}}/Reboot.txt
