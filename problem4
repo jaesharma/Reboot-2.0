@@ -1,0 +1,32 @@
+sol: 
+=> creating two user jack and jill:
+useradd jack
+passwd jack
+
+useradd jill
+passwd jill
+
+=> creating files and folder under jack user:
+su - jack
+vim jack.txt
+'i' to start insert mode.
+"hello jack"
+'esc' to exit insert mode ':x' to save & exit.
+
+=>creating dir from jack user.
+mkdir jack1 jack2
+
+=> login with jill user and creating data files/dirs.
+ctrl+D to logout from current logged in user.
+su - jill
+creating jill.txt same as jack.txt with content "hello jill".
+mkdir jill1 jill2
+
+=>swaping files between jack and jill.
+su - jill
+setfacl -m u:jack:rwx /home/jill
+
+su - jack
+setfacl -m u:jill:rwx /home/jack
+
+=>now jack user can access jill's shared file from /home/jill and jill user can access jack's file from /home/jack.

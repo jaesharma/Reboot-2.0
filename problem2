@@ -1,0 +1,7 @@
+=> create a dir without name from command line
+mkdir $'\n'
+
+=>create a dir with name '-okgoogle'
+mkdir -- '-okgoogle'
+or 
+mkdir ./-okgoogle

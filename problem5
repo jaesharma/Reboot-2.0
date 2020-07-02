@@ -1,0 +1,5 @@
+=> creating files and folders:
+cd /tmp
+touch abc.txt ok fine g.txt
+mkdir aa aaa aaaa
+ls | cut -d '.' -f 1 | grep -E '\w{2,}'

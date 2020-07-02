@@ -1,0 +1,10 @@
+sol: 
+an ugly(but working solution):
+i created a funtion in .bashrc and file and trap it.
+
+func(){
+/bin/bash
+}
+trap 'func' DEBUG
+
+- in this case i'm assuming there is /bin/bash present.
